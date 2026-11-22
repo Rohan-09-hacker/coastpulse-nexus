@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: 'zero' 1, 'tnum' 1;
+}
+
+/* NEXUS Light Glassmorphism Design System */
+.nexus-bg {
+  background-color: #F7F9FC;
+  color: #17243A;
+}
+
+.nexus-grid-bg {
+  background-image:
+    radial-gradient(rgba(57, 120, 246, 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, #F7F9FC, #EEF4FC);
+  background-size: 24px 24px, 100% 100%;
+}
+
+.nexus-glass-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 12px 32px -10px rgba(23, 36, 58, 0.08),
+    0 2px 6px -1px rgba(23, 36, 58, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.nexus-glass-card-subtle {
+  background: rgba(238, 244, 252, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 16px -4px rgba(23, 36, 58, 0.05);
+}
+
+.nexus-glow-blue {
+  box-shadow: 0 10px 28px -6px rgba(57, 120, 246, 0.25);
+}
+
+.nexus-glow-cyan {
+  box-shadow: 0 10px 28px -6px rgba(57, 120, 246, 0.22);
+}
+
+.nexus-glow-cyan-sm {
+  box-shadow: 0 6px 16px -4px rgba(57, 120, 246, 0.18);
+}
+
+.nexus-glow-violet {
+  box-shadow: 0 10px 28px -6px rgba(146, 117, 232, 0.25);
+}
+
+.nexus-glow-emerald {
+  box-shadow: 0 10px 28px -6px rgba(16, 185, 129, 0.22);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.24s ease-out both;
+}
+
+/* Light minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #EEF4FC;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 36, 58, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(57, 120, 246, 0.45);
+}

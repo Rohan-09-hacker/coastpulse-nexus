@@ -1,0 +1,6 @@
+{
+  "name": "COASTPULSE CORE",
+  "description": "Universal, model-independent AI application platform ('One Engine. Unlimited AI Applications') featuring AI Workspace, Model Control Center, Workflow Engine, Evaluation Lab, Analytics Dashboard, API Playground, Application Registry, and Coastal Intelligence demonstration template.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
